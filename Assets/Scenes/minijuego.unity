@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.64167064, g: 0.86603653, b: 0.88084334, a: 1}
+  m_IndirectSpecularColor: {r: 0.6415781, g: 0.8659534, b: 0.8808266, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -997,6 +997,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82b2c64f4e2d5264bbf0f909cadda2fa, type: 3}
+--- !u!1 &481355982 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7898762978676994089, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
+  m_PrefabInstance: {fileID: 2316956956753283815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &482641344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1323,9 +1328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 783152649}
   - component: {fileID: 783152648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GeneradorDeCasas
-  m_TagString: Untagged
+  m_TagString: objetovalido
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,10 +1347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1998a9c17119e7a4d88d67d4948dd902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontPrefab: {fileID: 7898762978676994089, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
+  frontPrefab: {fileID: 481355982}
   cantidadFronts: 6
-  rangoInicio: {x: 16, y: 0, z: 0}
-  rangoFin: {x: 160, y: 0, z: 0}
+  rangoInicio: {x: 16, y: 4.96, z: 8.57}
+  rangoFin: {x: 160, y: 4.96, z: 8.57}
   distanciaMinima: 20
 --- !u!4 &783152649
 Transform:
@@ -3538,9 +3543,9 @@ GameObject:
   - component: {fileID: 1848600804}
   - component: {fileID: 1848600803}
   - component: {fileID: 1848600805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: objetovalido
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4001,6 +4006,14 @@ PrefabInstance:
     - target: {fileID: 7898762978676994089, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
       propertyPath: m_Name
       value: front
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898762978676994089, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898762978676994089, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
+      propertyPath: m_TagString
+      value: objetovalido
       objectReference: {fileID: 0}
     - target: {fileID: 9137908646273635120, guid: a9f6824516021514f83a70a10fc3c0a5, type: 3}
       propertyPath: m_LocalPosition.x
