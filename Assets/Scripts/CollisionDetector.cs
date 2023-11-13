@@ -4,65 +4,38 @@ using UnityEngine;
 
 public class CollisionDetector : MonoBehaviour
 {
-    private List<GameObject> objetosColisionados = new List<GameObject>();
-    private int puntos = 0;
-
-    public SpawnFronts spawnFronts;
-
-    private void Start()
-    {
-        // Asigna la referencia al script SpawnFronts
-        spawnFronts = FindObjectOfType<SpawnFronts>();
-    }
+    private List<GameObject> objetosColisionados = new List<GameObject>(); 
+    private int puntos = 0; 
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            CheckCollisionAndScore(spawnFronts.colorQ);
-        }
-        else if (Input.GetKeyDown(KeyCode.W))
-        {
-            CheckCollisionAndScore(spawnFronts.colorW);
-        }
-        else if (Input.GetKeyDown(KeyCode.E))
-        {
-            CheckCollisionAndScore(spawnFronts.colorE);
-        }
-    }
-
-    private void CheckCollisionAndScore(Color colorTecla)
-    {
-        foreach (var front in GameObject.FindGameObjectsWithTag("objetovalido"))
-        {
-            Collider frontCollider = front.GetComponent<Collider>();
-
-            // Verifica si el "front" tiene un componente Collider
-            if (frontCollider != null && frontCollider.CompareTag("objetovalido"))
+            foreach (var objeto in objetosColisionados)
             {
-                // Verifica si el Collider está tocando el Box Collider del objeto "front"
-                if (ColliderIntersects(frontCollider, GetComponent<Collider>()))
+                if (objeto.CompareTag("objetovalido"))
                 {
-                    Renderer frontRenderer = front.GetComponent<Renderer>();
-                    if (frontRenderer != null && frontRenderer.material.color == colorTecla)
-                    {
-                        puntos++;
-                        Debug.Log("Puntos: " + puntos);
-                        break;
-                    }
+                    puntos++; 
+                    Debug.Log("Puntos: " + puntos);
                 }
             }
+            objetosColisionados.Clear(); 
         }
     }
 
-    // Método para verificar si dos colliders están intersectados
-    private bool ColliderIntersects(Collider collider1, Collider collider2)
+    private void OnTriggerEnter(Collider other)
     {
-        // Obtiene las bounds de ambos colliders
-        Bounds bounds1 = collider1.bounds;
-        Bounds bounds2 = collider2.bounds;
+        if (other.CompareTag("objetovalido") && !objetosColisionados.Contains(other.gameObject))
+        {
+            objetosColisionados.Add(other.gameObject);
+        }
+    }
 
-        // Verifica si las bounds están intersectadas
-        return bounds1.Intersects(bounds2);
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("objetovalido"))
+        {
+            objetosColisionados.Remove(other.gameObject);
+        }
     }
 }
