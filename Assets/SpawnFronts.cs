@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class SpawnFronts : MonoBehaviour
 {
-    public GameObject frontPrefab; // El prefab de "front" que deseas instanciar
-    public int cantidadFronts = 6; // El número de "fronts" a generar
-    public Vector3 rangoInicio; // La posición de inicio del rango en el eje x
-    public Vector3 rangoFin; // La posición de fin del rango en el eje x
-    public float distanciaMinima = 20f; // Distancia mínima entre "fronts"
+   
+    private int cantidadFronts = 6; 
+    public Vector3 rangoInicio; 
+    public Vector3 rangoFin;
+    public float distanciaMinima = 20f;
+    public GameObject prefabQ;
+    public GameObject prefabW;
+    private int prefabsGenerados = 0; 
 
-    private List<GameObject> frontsGenerados = new List<GameObject>(); // Almacena los "fronts" generados
+    private List<GameObject> frontsGenerados = new List<GameObject>(); 
 
     private void Start()
     {
         GenerateFronts();
     }
 
-    private void GenerateFronts()
+    void GenerateFronts()
     {
-        for (int i = 0; i < cantidadFronts; i++)
+        while (prefabsGenerados < cantidadFronts)
         {
             float randomX = Random.Range(rangoInicio.x, rangoFin.x);
             Vector3 spawnPosition = new Vector3(randomX, rangoInicio.y, rangoInicio.z);
@@ -37,13 +40,24 @@ public class SpawnFronts : MonoBehaviour
 
             if (distanciaValida)
             {
-                GameObject nuevoFront = Instantiate(frontPrefab, spawnPosition, Quaternion.identity);
+                GameObject nuevoFront;
+
+                // Alterna entre los prefabs Q y W
+                if (prefabsGenerados % 2 == 0)
+                {
+                    nuevoFront = Instantiate(prefabQ, spawnPosition, Quaternion.identity);
+                    nuevoFront.AddComponent<PrefabKey>().TeclaEsperada = KeyCode.Q;
+                    Debug.Log("Generado prefabQ");
+                }
+                else
+                {
+                    nuevoFront = Instantiate(prefabW, spawnPosition, Quaternion.identity);
+                    nuevoFront.AddComponent<PrefabKey>().TeclaEsperada = KeyCode.W;
+                    Debug.Log("Generado prefabW");
+                }
+                    
                 frontsGenerados.Add(nuevoFront);
-            }
-            else
-            {
-                // Si la distancia no es válida, intenta nuevamente con una nueva posición
-                i--;
+                prefabsGenerados++;
             }
         }
     }
