@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 29bb0e0d92407654b8f89cb8bd8446d0
+  - enabled: 1
+    path: "Assets/Scenes/Men\xFA.unity"
+    guid: 8a2629d3857ad394a974ef7d69284f85
+  - enabled: 1
+    path: Assets/Scenes/minijuego.unity
+    guid: a4210d1da2962ee4eb4eeaaac6a2ee4a
+  - enabled: 1
+    path: Assets/Scenes/Historia.unity
+    guid: f8e1d51181d0cd34bba475b87dee17b1
   m_configObjects: {}
