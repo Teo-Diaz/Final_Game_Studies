@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: Aria Cine 1
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Dado que te gusta la ciencia ficci\xF3n, \xBFte gustar\xEDa ver una pel\xEDcula
+      de este g\xE9nero?"
+    nextScene: {fileID: 11400000, guid: d7d412bb7a655344cbd9f8e8f86ddf4f, type: 2}
+  - text: "\xBFQu\xE9 piensas de las pel\xEDculas interactivas? \xBFTe gustar\xEDa
+      probar algo diferente?"
+    nextScene: {fileID: 11400000, guid: d7d412bb7a655344cbd9f8e8f86ddf4f, type: 2}
+  - text: "No me emociona mucho las pel\xEDculas. Solo quer\xEDa ver el lugar, pero
+      podemos ver una pel\xEDcula cl\xE1sica y ver qu\xE9 sucede. "
+    nextScene: {fileID: 11400000, guid: d7d412bb7a655344cbd9f8e8f86ddf4f, type: 2}

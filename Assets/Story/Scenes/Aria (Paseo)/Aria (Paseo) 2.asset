@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Aria (Paseo) 2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "\xA1Guau! Aqu\xED la tecnolog\xEDa no solo sirve para hacer la vida m\xE1s
+      f\xE1cil, sino tambi\xE9n para inspirar. \xBFC\xF3mo influye esto en la vida
+      cotidiana de las personas?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "La gente aqu\xED abraza la creatividad en su vida diaria. Desde la elecci\xF3n
+      de la ropa hasta las interacciones sociales, la tecnolog\xEDa y la creatividad
+      son parte integral de la identidad de cada individuo."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[La conversaci\xF3n fluye, y mientras contin\xFAan explorando la ciudad,
+      Orion y Aria intercambian ideas sobre la intersecci\xF3n de la tecnolog\xEDa
+      y la creatividad en Nexus, profundizando su comprensi\xF3n mutua y fortaleciendo
+      su conexi\xF3n.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: '[Al final, Aria y Orion terminan caminando por las calles de Nexus, rodeados
+      de luces brillantes y hologramas que dan vida a la ciudad.]'
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 83d14532f3d098b41beee282a463e002, type: 3}
+  nextScene: {fileID: 11400000, guid: f342f5c5676b6ac408e2e5fe3837087c, type: 2}

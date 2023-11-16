@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Aria (Paseo)
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: '[Aria y Orion caminan por las calles de Nexus, rodeados de luces brillantes
+      y hologramas que dan vida a la ciudad.]'
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[Aria sonr\xEDe mientras observa las diversas formas de tecnolog\xEDa
+      y arte que adornan las calles.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "\xA1Bienvenidos a la ciudad de Nexus! Como podr\xE1s ver, la tecnolog\xEDa
+      se fusiona con la creatividad para crear un entorno \xFAnico e inigualable.
+      Espero que disfrutes de ello."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "Realmente es sorprendente. No he experimentado nada como esto en mi mundo.
+      \xBFC\xF3mo logran mantener este equilibrio entre tecnolog\xEDa y creatividad?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "La idea surgi\xF3 de la necesidad de encontrar un equilibrio entre el
+      avance tecnol\xF3gico y la esencia humana. Quer\xEDamos que la tecnolog\xEDa
+      no solo fuera funcional, sino tambi\xE9n expresiva y hermosa."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: ' '
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 0980ce6530f52304fba7a86924e12fae, type: 3}
+  nextScene: {fileID: 11400000, guid: 282ffdd171a38244a88f8c3df8ff5854, type: 2}

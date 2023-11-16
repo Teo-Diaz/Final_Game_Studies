@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: Aria Paseo
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Eso es impresionante. En mi mundo\u2026"
+    nextScene: {fileID: 11400000, guid: 3e4ef37537beb734089db560b0f9c4bc, type: 2}
+  - text: "\xA1Guau! Aqu\xED la tecnolog\xEDa no solo sirve para\u2026"
+    nextScene: {fileID: 11400000, guid: 9f99e858322abcd40b3c705783ac6ba8, type: 2}
+  - text: "Aunque suena interesante, \xBFno crees que\u2026"
+    nextScene: {fileID: 11400000, guid: 82ff4d04f20834d4eb848074e2d030b3, type: 2}

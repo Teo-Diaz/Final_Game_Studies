@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: Aria final
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "La pas\xE9 genial. Gracias por llevarme a lugares tan fascinantes. Realmente
+      aprecio tu compa\xF1\xEDa."
+    nextScene: {fileID: 11400000, guid: bdbebd5bbf7710344a5ce9f64fac317b, type: 2}
+  - text: "Fue una experiencia \xFAnica. Me encant\xF3 explorar Nexus contigo. "
+    nextScene: {fileID: 11400000, guid: bdbebd5bbf7710344a5ce9f64fac317b, type: 2}
+  - text: "Estuvo bien. Nexus es definitivamente \xFAnico a su manera."
+    nextScene: {fileID: 11400000, guid: e06163b4f782b884dbf428b186215918, type: 2}

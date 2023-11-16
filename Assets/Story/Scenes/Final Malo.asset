@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Final Malo
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Lamentamos informar que no has pasado la prueba con \xE9xito. Tu conexi\xF3n
+      con Nexus no ha alcanzado los est\xE1ndares requeridos. Como resultado, te
+      quedas permanentemente en Nexus."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[La luz ambiental cambia en tono, reflejando la permanencia en Nexus.
+      El entorno se siente m\xE1s inmersivo, pero la sensaci\xF3n de haber perdido
+      el v\xEDnculo con el mundo original se cierne sobre Orion.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "Tu elecci\xF3n de quedarte en Nexus es irrevocable. Nexus te acoger\xE1
+      como uno de los suyos. Apreciamos tu participaci\xF3n en la prueba"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[El holograma se desvanece, dejando a Orion en un Nexus ahora m\xE1s inmersivo,
+      pero con la carga de una elecci\xF3n que no fue la esperada.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 4814f7f0910cc754b8651e3df4d8e740, type: 3}
+  nextScene: {fileID: 0}

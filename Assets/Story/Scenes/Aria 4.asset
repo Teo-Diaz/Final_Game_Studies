@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Aria 4
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "[Aria comparte detalles emocionantes sobre sus proyectos y avances en
+      la rob\xF3tica. La conversaci\xF3n fluye y Orion tuvo la oportunidad de profundizar
+      en temas que no conoc\xEDa.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[Tras un largo tiempo de explicaci\xF3n, Aria se da cuenta que estuvo
+      hablando solamente sobre sus proyectos y sue\xF1os, sin tener en cuenta si
+      a Orion le intesaba o no]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "\xA1Perd\xF3n! me emocion\xE9 y termin\xE9 hablando de m\xE1s. Espero
+      que no te haya incomodado. "
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: Descuida, no pasa nada.
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[Aria toca un panel hologr\xE1fico, abriendo un mapa de Nexus.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "Hay muchos lugares interesantes aqu\xED. \xBFTienes alg\xFAn sitio en
+      particular que te gustar\xEDa visitar?"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: ' '
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: eddfe009b49d3484d8dfb5498d6a2f17, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    - speaker: {fileID: 11400000, guid: b843862a9e99df045b8800c5b7a3165d, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 3f248d0d3e353e34d9651dc18243a2d3, type: 3}
+  nextScene: {fileID: 11400000, guid: 42047a9283b936341a04711fbbd85eb6, type: 2}

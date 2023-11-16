@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Aria (Cine) 2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "[El cine presenta asientos hologr\xE1ficos que se ajustan a la trama de
+      la pel\xEDcula, efectos especiales hologr\xE1ficos y sonido envolvente que
+      sumerge a los espectadores.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[Mientras la pel\xEDcula comienza, ambos se sumergen en un viaje visual
+      y emocional, con oportunidades para comentar sobre la tecnolog\xEDa presentada
+      en la pel\xEDcula y c\xF3mo podr\xEDa inspirarse para sus proyectos futuros.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions: []
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: a34ad1905672bf14489a6f0442ca07c2, type: 3}
+  nextScene: {fileID: 11400000, guid: e4c1c6d66eb4f9f469583e1094ab7308, type: 2}

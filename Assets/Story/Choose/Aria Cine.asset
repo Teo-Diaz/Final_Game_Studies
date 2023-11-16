@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: Aria Cine
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Este lugar es incre\xEDble. La fusi\xF3n de ciencia ficci\xF3n y tecnolog\xEDa
+      realmente crea una atm\xF3sfera \xFAnica"
+    nextScene: {fileID: 11400000, guid: 64244f2168bf5a543ac60b932a47d755, type: 2}
+  - text: "La mezcla de elementos futuristas con las pel\xEDculas de ciencia ficci\xF3n
+      es sorprendente. "
+    nextScene: {fileID: 11400000, guid: 64244f2168bf5a543ac60b932a47d755, type: 2}

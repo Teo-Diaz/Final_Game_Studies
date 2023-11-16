@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: Aria Cine 2
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "Fue incre\xEDble. En como la tecnolog\xEDa se fusiona con la narrativa
+      es asombrosa. \xBFQu\xE9 te pareci\xF3 a ti?"
+    nextScene: {fileID: 11400000, guid: f5964d39a0ade324dba5fd12d8372b9f, type: 2}
+  - text: "Fue algo interesante. En c\xF3mo la tecnolog\xEDa puede cambiar la forma
+      en que experimentamos historias"
+    nextScene: {fileID: 11400000, guid: f5964d39a0ade324dba5fd12d8372b9f, type: 2}

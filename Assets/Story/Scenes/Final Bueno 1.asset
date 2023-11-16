@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
+  m_Name: Final Bueno 1
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Tu elecci\xF3n de quedarte en Nexus es respetada. Como has decidido permanecer,
+      ser\xE1s parte integral de este mundo. Apreciamos tu participaci\xF3n en la
+      prueba."
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+      spriteIndex: 1
+      actionType: 1
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  - text: "[Una c\xE1lida luz envuelve al protagonista mientras la decisi\xF3n se
+      vuelve irreversible. La ciudad hologr\xE1fica responde, brindando una bienvenida
+      m\xE1s efusiva a su nuevo habitante permanente.]"
+    audio: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: bf2c5b75e5f0aba4a872978bc038b992, type: 2}
+      spriteIndex: 1
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
+    music: {fileID: 8300000, guid: c90bbda81fc61b64096dab173e188461, type: 3}
+    sound: {fileID: 0}
+  background: {fileID: 21300000, guid: 4814f7f0910cc754b8651e3df4d8e740, type: 3}
+  nextScene: {fileID: 0}
