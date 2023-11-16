@@ -6,6 +6,7 @@ public class MovimientoHorizontal : MonoBehaviour
 {
     private ControladorJuego controladorJuego;
     public float velocidad = 2.0f;
+    public float posicionUmbral = 330.0f;
 
     void Start()
     {
@@ -18,13 +19,22 @@ public class MovimientoHorizontal : MonoBehaviour
 
     void Update()
     {
-        // Mover el objeto horizontalmente hacia la derecha
+       
         transform.Translate(Vector3.right * controladorJuego.VelocidadActual * Time.deltaTime);
 
-        
+        if (transform.position.x >= posicionUmbral)
+        {
+            // Llamar al método y mostrar un mensaje de depuración
+            MetodoEspecial();
+            Debug.Log("Se ha llamado al método");
+        } 
         if (Input.GetKeyDown(KeyCode.S))
         {
             controladorJuego.AumentarVelocidadYMultiplicador();
+        }
+        void MetodoEspecial()
+        {
+
         }
     }
 }

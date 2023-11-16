@@ -23,7 +23,7 @@ public class ControladorJuego : MonoBehaviour
         }
     }
 
-    private float velocidadInicial = 6.5f;
+    private float velocidadInicial = 8.5f;
     private float velocidadActual;
     private float multiplicadorPuntos = 1.5f;
     private float ActivarMultiplicador = 1.5f;
@@ -35,7 +35,7 @@ public class ControladorJuego : MonoBehaviour
 
     public void AumentarVelocidadYMultiplicador()
     {
-        velocidadActual = 9f;
+        velocidadActual = 15f;
         multiplicadorPuntos = 1.5f;
     }
 

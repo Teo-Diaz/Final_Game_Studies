@@ -7,12 +7,15 @@ public class CollisionDetector : MonoBehaviour
     private double puntos = 0;
     private ControladorJuego controladorJuego;
     private double puntosextra = 0.5;
-  
+    private UIManager uiManager;
+
 
     void Start()
     {
 
         controladorJuego = FindObjectOfType<ControladorJuego>();
+        uiManager = FindObjectOfType<UIManager>();
+
         if (controladorJuego == null)
         {
             Debug.LogError("No se encontró el ControladorJuego en el mismo GameObject.");
@@ -29,6 +32,7 @@ public class CollisionDetector : MonoBehaviour
         {
             ActivarMultiplicador();
         }
+        uiManager.ActualizarPuntos(puntos);
     }
     private void VerificarTecla()
     {
