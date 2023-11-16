@@ -3,9 +3,21 @@ using UnityEngine;
 
 public class CollisionDetector : MonoBehaviour
 {
-    //public KeyCode teclaEsperada;
     private List<GameObject> objetosColisionados = new List<GameObject>();
-    private int puntos = 0;
+    private double puntos = 0;
+    private ControladorJuego controladorJuego;
+    private double puntosextra = 0.5;
+  
+
+    void Start()
+    {
+
+        controladorJuego = FindObjectOfType<ControladorJuego>();
+        if (controladorJuego == null)
+        {
+            Debug.LogError("No se encontró el ControladorJuego en el mismo GameObject.");
+        }
+    }
 
     private void Update()
     {
@@ -13,8 +25,11 @@ public class CollisionDetector : MonoBehaviour
         {
             VerificarTecla();
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            ActivarMultiplicador();
+        }
     }
-
     private void VerificarTecla()
     {
         bool teclaCorrecta = false;
@@ -32,8 +47,17 @@ public class CollisionDetector : MonoBehaviour
 
         if (teclaCorrecta)
         {
-            puntos++;
-            Debug.Log("Punto! Puntos totales: " + puntos);
+            puntos += 1;
+            if (controladorJuego.MultiplicadorActivado)
+            {
+                puntos = puntos += puntosextra;
+                Debug.Log("¡Punto multiplicado! Puntos totales: " + puntos);
+            }
+            else
+            {
+                Debug.Log("Punto! Puntos totales: " + puntos);
+            }
+        
         }
         else
         {
@@ -57,5 +81,13 @@ public class CollisionDetector : MonoBehaviour
         {
             objetosColisionados.Remove(other.gameObject);
         }
+    }
+    private void AumentarVelocidadYPuntos()
+    {
+        controladorJuego.AumentarVelocidadYMultiplicador();
+    }
+    private void ActivarMultiplicador()
+    {
+        controladorJuego.SetMultiplicadorActivado();
     }
 }
