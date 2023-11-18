@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6413997, g: 0.8658903, b: 0.88080865, a: 1}
+  m_IndirectSpecularColor: {r: 0.6415535, g: 0.86596334, b: 0.8808312, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -891,6 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33f0e2ed147f20459e126368fd7dcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreEscenaHistoria: Game
 --- !u!4 &209653276
 Transform:
   m_ObjectHideFlags: 0
@@ -8335,7 +8336,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 209653275}
         m_TargetAssemblyTypeName: RegresarJuego, Assembly-CSharp
-        m_MethodName: Regresar
+        m_MethodName: RegresarAEscenaHistoria
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
